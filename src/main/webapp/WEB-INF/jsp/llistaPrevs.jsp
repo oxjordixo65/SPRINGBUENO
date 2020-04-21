@@ -23,15 +23,15 @@
     <tbody>
 
 
-    <c:forEach items="${clients}" var="client" varStatus="loop">
+    <c:forEach items="${prevs}" var="prev" varStatus="loop">
     <tr>
         <th scope="row">${loop.index}</th>
-        <td>${client.nom}</td>
-        <td>${client.cognom}</td>
-        <td>${client.volumCompres}
+        <td>${prev.dia}</td>
+        <td>${prev.temps}</td>
+        <td>${prev.temperatura}
         </td>
-        <td><a class="btn btn-primary" href="/esborrarClient?id=${client.id}">esborra</a>
-            <c:if test="${client.volumCompres<1000}">
+        <td><a class="btn btn-primary" href="/esborrarPrev?id=${prev.id}">esborra</a>
+            <c:if test="${prev.temperatura<1000}">
                 <a class="btn btn-danger" href="#">contactar</a>
             </c:if>
         </td>

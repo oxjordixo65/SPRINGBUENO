@@ -1,6 +1,6 @@
 package edu.fje.daw2.m07uf2;
 
-import edu.fje.daw2.m07uf2.model.Client;
+import edu.fje.daw2.m07uf2.model.Prev;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -24,7 +24,7 @@ public class M07uf2Application implements CommandLineRunner {
 
 
     @Autowired
-    private ClientRepositori repositori;
+    private PrevRepositori repositori;
 
     public static void main(String[] args) {
         SpringApplication.run(M07uf2Application.class, args);
@@ -40,16 +40,16 @@ public class M07uf2Application implements CommandLineRunner {
 
         repositori.deleteAll();
 
-        repositori.save(new Client("Sergi", "Grau", 1000));
-        repositori.save(new Client("Joan", "Grau", 2000));
+        repositori.save(new Prev("Sergi", "Grau", 1000));
+        repositori.save(new Prev("Joan", "Grau", 2000));
 
-        for (Client c : repositori.findAll()) {
+        for (Prev c : repositori.findAll()) {
             System.out.println(c);
         }
         System.out.println();
-        System.out.println(repositori.findByCognom("Sergi"));
+        System.out.println(repositori.findByDia("Sergi"));
 
-        for (Client c : repositori.findByCognom("Grau")) {
+        for (Prev c : repositori.findByTemps("Grau")) {
             System.out.println(c);
         }
 

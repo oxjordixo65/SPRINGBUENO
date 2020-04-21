@@ -10,7 +10,7 @@
 <body>
 ${2+2}
 <div class="container" >
-<form action="/desarClient" method="post">
+<form action="/desarPrev" method="post">
     <div class="form-group">
         <label for="dia">dia</label>
         <input name="dia" type="date" class="form-control" id="dia" aria-describedby="dia" placeholder="Entra el dia">

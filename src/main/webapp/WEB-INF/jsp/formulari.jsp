@@ -6,9 +6,11 @@
 <html lang="ca">
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-${2+2}
+
+
 <div class="container" >
 <form action="/desarPrev" method="post">
     <div class="form-group">
@@ -16,13 +18,12 @@ ${2+2}
         <input name="dia" type="date" class="form-control" id="dia" aria-describedby="dia" placeholder="Entra el dia">
     </div>
     <div class="form-group">
-        <!--
-        <label for="temps">temps</label>
-        <input name="temps"  type="text" class="form-control" id="temps" aria-describedby="temps" placeholder="Entra temps">
-        -->
+
+        <label for="temps">temps <i class="fas fa-sun"></i> - <i class="fas fa-cloud"></i> -
+            <i class="fas fa-cloud-showers-heavy"></i> - <i class="fas fa-bolt"></i> - <i class="fas fa-wind"></i></label><br>
         <select id="temps" name="temps">
-            <option value="Sol">Sol</option>
-            <option value="Nuvol" selected>Nuvol</option>
+            <option value="Sol" selected>Sol</option>
+            <option value="Nuvol">Nuvol</option>
             <option value="Pluja">Pluja</option>
             <option value="Trons">Trons</option>
             <option value="Vent">Vent</option>

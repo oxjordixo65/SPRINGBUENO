@@ -38,20 +38,23 @@ public class M07uf2Application implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-        repositori.deleteAll();
+        //repositori.deleteAll();
 
-        repositori.save(new Prev("Sergi", "Grau", 1000));
-        repositori.save(new Prev("Joan", "Grau", 2000));
+        /*
+        repositori.save(new Prev("2020-01-10", "Sol", 25));
+        repositori.save(new Prev("2020-01-11", "Nuvol", 30));
 
         for (Prev c : repositori.findAll()) {
             System.out.println(c);
         }
         System.out.println();
-        System.out.println(repositori.findByDia("Sergi"));
+        System.out.println(repositori.findByDia("2020-01-11"));
 
-        for (Prev c : repositori.findByTemps("Grau")) {
+        for (Prev c : repositori.findByTemps("Nuvol")) {
             System.out.println(c);
         }
+
+         */
 
     }
 }

@@ -14,9 +14,9 @@
     <thead>
     <tr>
         <th scope="col">#</th>
-        <th scope="col">nom</th>
-        <th scope="col">cognom</th>
-        <th scope="col">volum</th>
+        <th scope="col">dia</th>
+        <th scope="col">temps</th>
+        <th scope="col">temperatura</th>
         <th scope="col">acció</th>
     </tr>
     </thead>
@@ -41,12 +41,14 @@
     <%@ page contentType="text/html" %>
 
     <html>
+    <!--
     <body bgcolor="white">
     suma de 2+3: <daw2:etiqueta  primer="2" segon="3" /> <br />
     suma de 1+1: <daw2:etiqueta primer="1" segon="1" />
     suma de 4+2 <daw2:producte uno="4" dos="2" />
 
     </body>
+    -->
     </html>
 
     </tbody>
